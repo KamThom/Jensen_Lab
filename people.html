@@ -122,7 +122,7 @@
         </div>
 
         <!-- Rocky -->
-        <div class="person">
+        <div class="person mascot">
           <img src="images/photo_dogc.jpg" alt="Rocky the Dog" />
           <h3>Rocky</h3>
           <p>Official Lab Mascot</p>
@@ -132,11 +132,45 @@
     </section>
   </main>
 
+  <button id="scrollToTopBtn" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <footer>
     <p>
       &copy; 2025 Jensen Lab | UNC Chapel Hill<br>
       Site created by <a href="https://www.linkedin.com/in/kamthoma" target="_blank">Kam Thomas</a>
     </p>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+  
+    const hiddenElements = document.querySelectorAll('.person');
+    hiddenElements.forEach(el => observer.observe(el));
+  </script>
+
+<script>
+  const scrollBtn = document.getElementById('scrollToTopBtn');
+
+  window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  scrollBtn.addEventListener('click', function(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+</script>
+
 </body>
 </html>

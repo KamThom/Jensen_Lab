@@ -7,12 +7,24 @@
   padding: 20px;
 }
 
-.person {
+/* .person {
   background: #222;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+} */
+
+.person {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease, transform 0.4s ease, box-shadow 0.4s ease;
+  will-change: transform, opacity;
+}
+
+.person:hover {
+  transform: translateY(-5px) rotateZ(-1deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .person img {
@@ -33,10 +45,9 @@
   color: #81c7ff;
 }
 
-.person p {
-  margin-top: 5px;
-  color: #e0e0e0;
-  font-size: 1em;
+.person.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .person blockquote {
@@ -72,4 +83,38 @@
   font-style: italic;
   color: #cccccc;
   margin-top: 0;
+}
+
+.mascot {
+  box-shadow: 0 0 15px rgba(75, 156, 211, 0.6); /* Carolina blue glow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Stronger glow on hover */
+.mascot:hover {
+  box-shadow: 0 0 25px rgba(75, 156, 211, 0.9);
+}
+
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  background-color: #4B9CD3;
+  color: white;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #81c7ff;
+  transform: scale(1.1);
 }
