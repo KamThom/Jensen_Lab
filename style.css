@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   background: #121212;
   color: #e0e0e0;
   margin: 0;
@@ -13,7 +13,7 @@ a {
 .hero {
   background: linear-gradient(to right, #1f1f1f, #2c2c2c);
   color: white;
-  padding: 60px 20px;
+  padding: 40px 60px;
 }
 
 .hero-content-flex {
@@ -21,10 +21,20 @@ a {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  flex-wrap: wrap; /* allows stacking on small screens */
+  flex-wrap: wrap;
   max-width: 1000px;
   margin: auto;
   text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .lab-logo {
@@ -34,7 +44,17 @@ a {
 
 .hero-text h1 {
   font-size: 3em;
-  margin: 0;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.hero-text h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #4B9CD3;
+  margin-top: 10px;
 }
 
 .hero-text p {
@@ -54,13 +74,13 @@ a {
 }
 
 .button:hover {
-  background: #347aab;
+  background: #81c7ff;
+  color: #121212;
+  transform: scale(1.05);
 }
 
-.research-focus {
-  background: #1a1a1a;
-  padding: 60px 20px;
-  text-align: center;
+.about, .research-focus {
+  padding: 80px 20px;
 }
 
 .research-cards {
