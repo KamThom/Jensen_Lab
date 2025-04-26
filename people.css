@@ -1,23 +1,29 @@
 .people-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
   max-width: 1000px;
   margin: auto;
   padding: 20px;
-  place-items: center; 
 }
 
 .person {
-  background: #222; 
+  background: #222;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
   opacity: 0;
   transform: translateY(20px);
   will-change: transform, opacity;
+  flex: 1 1 250px;
+  min-height: 360px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .person {
