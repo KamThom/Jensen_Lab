@@ -56,7 +56,28 @@ a {
   text-decoration: none;
   font-weight: 500;
   font-size: 1em;
+  position: relative;
   transition: color 0.3s;
+}
+
+.hero-nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #81c7ff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.hero-nav a:hover {
+  color: #ffffff;
+}
+
+.hero-nav a:hover::after {
+  width: 100%;
 }
 
 .hero-nav a:hover {
