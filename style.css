@@ -27,9 +27,15 @@ a {
   margin-bottom: 20px;
 }
 
+.lab-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
 .button {
-  background: #ffffff;
-  color: #121212;
+  background: #4B9CD3;
+  color: white;
   padding: 12px 25px;
   text-decoration: none;
   font-weight: bold;
@@ -38,8 +44,8 @@ a {
 }
 
 .button:hover {
-  background: #444;
-  color: #fff;
+  background: #347aab;
+  color: white;
 }
 
 .research-focus {
@@ -75,7 +81,7 @@ a {
 
 .card .icon {
   font-size: 2.5em;
-  color: #ff4b4b;
+  color: #4B9CD3; /* Carolina Blue */
   margin-bottom: 15px;
 }
 
