@@ -155,5 +155,18 @@
       Site created by <a href="https://www.linkedin.com/in/kamthoma" target="_blank">Kam Thomas</a>
     </p>
   </footer>
+
+  <script>
+    const pubObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+  
+    const hiddenPubs = document.querySelectorAll('.publication');
+    hiddenPubs.forEach(pub => pubObserver.observe(pub));
+  </script>
 </body>
 </html>
