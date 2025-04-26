@@ -10,16 +10,16 @@ body {
   background: linear-gradient(to right, #00274c, #004080);
   color: white;
   text-align: center;
-  padding: 120px 20px;
+  padding: 80px 20px; 
 }
 
 .hero-content h1 {
-  font-size: 3.5em;
+  font-size: 2.8em; 
   margin-bottom: 10px;
 }
 
 .hero-content p {
-  font-size: 1.5em;
+  font-size: 1.3em; 
   margin-bottom: 20px;
 }
 
@@ -38,7 +38,7 @@ body {
   color: white;
 }
 
-.about, .research-focus {
+.research-focus {
   max-width: 1000px;
   margin: 60px auto;
   padding: 0 20px;
@@ -47,9 +47,9 @@ body {
 
 .research-cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  flex-wrap: wrap; /* still wrap on very small screens */
   margin-top: 30px;
 }
 
@@ -60,6 +60,14 @@ body {
   width: 300px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 0 1 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* <--- add transition */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
@@ -75,4 +83,16 @@ footer {
 
 footer a {
   color: #00274c;
+}
+
+.about {
+  background: #ffffff; /* explicit white background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.research-focus {
+  background: #f0f0f0; /* very light gray background */
+  padding: 60px 20px;
+  text-align: center;
 }
