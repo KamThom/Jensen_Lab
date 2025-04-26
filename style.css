@@ -30,6 +30,54 @@ a {
   animation: fadeInUp 1.2s ease forwards;
 }
 
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.hero-nav a {
+  color: #81c7ff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.hero-nav a:hover {
+  color: #ffffff;
+}
+
+.lab-logo {
+  width: 60px;
+  height: auto;
+}
+
+.hero-text h1 {
+  font-size: 2.4em;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  margin: 5px 0 0;
+}
+
 @keyframes fadeInUp {
   to {
     opacity: 1;
