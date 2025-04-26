@@ -5,39 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Jensen Lab</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <h1>Jensen Lab</h1>
-    <p>UNC Chapel Hill | Department of Medicine – Division of Cardiology</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="people.html">People</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="hero">
+    <div class="hero-header">
+      <div class="hero-brand">
+        <img src="images/photo_logo.png" alt="Jensen Lab Logo" class="lab-logo" />
+        <div class="hero-text">
+          <h1>Jensen Lab</h1>
+          <p>UNC Chapel Hill | Department of Medicine – Division of Cardiology</p>
+        </div>
+      </div>
+      <nav class="hero-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Contact Us</h2>
+  <div class="contact-wrapper">
+    <main class="page-content">
+      <section class="contact-intro">
+        <h2>Contact Us</h2>
+        <p class="contact-quote">"Collaboration is the heart of discovery."</p>
+      </section>
 
-      <p><strong>Principal Investigator:</strong> Dr. Brian Jensen</p>
-      
-      <p><strong>Location:</strong><br>
-      Division of Cardiology<br>
-      University of North Carolina at Chapel Hill<br>
-      Chapel Hill, NC 27599</p>
+      <section class="contact-grid">
+        <div class="contact-card">
+          <h3>Brian Jensen, MD</h3>
+          <p>Associate Professor of Medicine and Pharmacology</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:9198435214">(919) 843-5214</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:Brian_Jensen@med.unc.edu">Brian_Jensen@med.unc.edu</a></p>
+        </div>
 
-      <p><strong>Email:</strong> <a href="mailto:brian_jensen@med.unc.edu">brian_jensen@med.unc.edu</a></p>
+        <div class="contact-card">
+          <h3>Wei Huang</h3>
+          <p>Lab Manager</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:9198434217">(919) 843-4217</a></p>
+        </div>
 
-      <p><strong>Collaborations and Opportunities:</strong><br>
-      Prospective students, postdoctoral fellows, and collaborators are encouraged to reach out to Dr. Jensen regarding research opportunities.</p>
-    </section>
-  </main>
+        <div class="contact-card">
+          <h3>Lab Location</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 2nd Floor, Medical Biomolecular Research Building<br>University of North Carolina at Chapel Hill</p>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <footer>
     <p>
