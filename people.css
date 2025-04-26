@@ -5,6 +5,7 @@
   max-width: 1000px;
   margin: auto;
   padding: 20px;
+  place-items: center; 
 }
 
 .person {
@@ -29,6 +30,7 @@
 .person:hover {
   transform: translateY(-5px) rotateZ(-1deg);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  background: #2a2a2a; /* slightly lighter gray on hover */
 }
 
 .person img {
@@ -43,6 +45,11 @@
 .person h3 a {
   color: #4B9CD3;
   text-decoration: none;
+}
+
+.person h3 a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .person:hover {
@@ -97,6 +104,15 @@
 
 .mascot:hover {
   box-shadow: 0 0 25px rgba(75, 156, 211, 0.9);
+}
+
+.mascot h3 {
+  color: #4B9CD3; 
+  transition: color 0.3s;
+}
+
+.mascot h3:hover {
+  color: #FFD700; 
 }
 
 #scrollToTopBtn {
