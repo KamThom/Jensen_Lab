@@ -18,4 +18,21 @@
     border-radius: 50%;
     border: 2px solid #ccc;
   }
+
+  .person blockquote {
+    font-style: italic;
+    font-size: 0.95em;
+    color: #ccc;
+    margin-top: 10px;
+  }
+
+  .person h3 a {
+    color: #4B9CD3;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .person h3 a:hover {
+    color: #81c7ff;
+  }
   
