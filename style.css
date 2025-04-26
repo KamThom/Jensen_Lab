@@ -191,6 +191,18 @@ a {
   margin-bottom: 15px;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-link:hover .card {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
 .about {
   background: #181818; /* slightly darker again */
   padding: 100px 20px;
@@ -259,4 +271,61 @@ footer a {
 
 html {
   scroll-behavior: smooth;
+}
+
+.page-content {
+  background: #1a1a1a;
+  padding: 80px 20px;
+  color: #e0e0e0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.research-intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #4B9CD3;
+  text-align: center;
+}
+
+.research-project {
+  margin-bottom: 60px;
+  padding: 30px;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.research-project h3 {
+  color: #81c7ff;
+  margin-bottom: 10px;
+}
+
+.grant {
+  font-size: 0.9em;
+  color: #cccccc;
+  margin-top: 10px;
+}
+
+.pub-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.pub-list li {
+  margin-bottom: 10px;
+}
+
+.pub-list a {
+  color: #81c7ff;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.pub-list a:hover {
+  color: #ffffff;
+}
+
+.pub-list i {
+  margin-right: 8px;
 }

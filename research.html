@@ -4,70 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research | Jensen Lab</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=3" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <h1>Jensen Lab</h1>
-    <p>UNC Chapel Hill | Department of Medicine – Division of Cardiology</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="people.html">People</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="hero">
+    <div class="hero-header">
+      <div class="hero-brand">
+        <img src="images/photo_logo.png" alt="Jensen Lab Logo" class="lab-logo" />
+        <div class="hero-text">
+          <h1>Jensen Lab</h1>
+          <p>Molecular Insights Into Heart Failure</p>
+        </div>
+      </div>
+      <nav class="hero-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Research Projects</h2>
-
-      <h3>1. Regulation of Cardiomyocyte Mitochondrial Function by Alpha-1A Adrenergic Receptors</h3>
-      <p>
-        We investigate the role of alpha-1A adrenergic receptors in regulating mitochondrial metabolism in the heart and their potential as therapeutic targets for heart failure. Our studies suggest that these receptors may protect against cardiometabolic syndrome.
-      </p>
-      <p><strong>Grant Support:</strong> 2R01 HL140067</p>
-      <p><strong>Recent Publications:</strong></p>
-      <ul>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/38362342/" target="_blank">Cardiomyocyte alpha-1A adrenergic receptors mitigate postinfarct remodeling and mortality by constraining necroptosis</a></li>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/38331556/" target="_blank">The alpha-1A adrenergic receptor regulates mitochondrial oxidative metabolism in the mouse heart</a></li>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/35170492/" target="_blank">Adrenergic receptor regulation of mitochondrial function in cardiomyocytes</a></li>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/33275531/" target="_blank">Cardiac alpha-1A adrenergic receptors: emerging protective roles in cardiovascular diseases</a></li>
-      </ul>
-
-      <h3>2. Cardiotoxicity of Targeted Cancer Therapies</h3>
-      <p>
-        We study the cardiovascular side effects of targeted cancer therapies, particularly kinase inhibitors, aiming to understand mechanisms of cardiotoxicity and improve patient outcomes.
-      </p>
-      <p><strong>Grant Support:</strong> R01 HL165294</p>
-      <p><strong>Recent Publications:</strong></p>
-      <ul>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/29051215/" target="_blank">Kinome and transcriptome profiling reveal broad and distinct activities of erlotinib, sunitinib, and sorafenib in the mouse heart</a></li>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/28977680/" target="_blank">Effects of the kinase inhibitor sorafenib on heart, muscle, liver and plasma metabolism</a></li>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/28640223/" target="_blank">Non-targeted metabolomics analysis of tyrosine kinase inhibitors sunitinib and erlotinib</a></li>
-      </ul>
-
-      <h3>3. Adaptive Roles of the Nuclear Receptor ROR-alpha in the Heart</h3>
-      <p>
-        Our lab explores the cardioprotective functions of ROR-alpha, a ligand-dependent transcription factor involved in mitochondrial function and cardiac hypertrophy regulation.
-      </p>
-      <p><strong>Recent Publications:</strong></p>
-      <ul>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/34756888/" target="_blank">The nuclear receptor ROR-alpha preserves cardiomyocyte mitochondrial function by regulating caveolin-3-mediated mitophagy</a></li>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/30387679/" target="_blank">The nuclear receptor ROR-alpha protects against angiotensin II-induced cardiac hypertrophy and heart failure</a></li>
-      </ul>
-
+  <main class="page-content">
+    <section class="research-intro">
+      <h2>Research Focus Areas</h2>
     </section>
+
+    <section class="research-project">
+      <h3>Adrenergic Receptor Regulation of Cardiac Metabolism</h3>
+      <p>
+        We explore how alpha-1A adrenergic receptors modulate mitochondrial function and metabolism in the heart, and their potential as therapeutic targets for heart failure and cardiometabolic syndrome.
+      </p>
+      <p class="grant">Supported by NIH Grant: 2R01 HL140067</p>
+      <ul class="pub-list">
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/38362342/" target="_blank"><i class="fas fa-external-link-alt"></i> Postinfarct remodeling and necroptosis mitigation</a></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/38331556/" target="_blank"><i class="fas fa-external-link-alt"></i> Alpha-1A receptor regulation of mitochondrial oxidative metabolism</a></li>
+      </ul>
+    </section>
+
+    <section class="research-project">
+      <h3>Cardiotoxicity of Targeted Cancer Therapies</h3>
+      <p>
+        Investigating cardiovascular side effects of kinase inhibitors and novel cancer treatments to minimize cardiotoxicity and improve patient outcomes.
+      </p>
+      <p class="grant">Supported by NIH Grant: R01 HL165294</p>
+      <ul class="pub-list">
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/29051215/" target="_blank"><i class="fas fa-external-link-alt"></i> Kinome profiling of cardiotoxic kinase inhibitors</a></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/28977680/" target="_blank"><i class="fas fa-external-link-alt"></i> Metabolomics analysis of sorafenib impact on heart</a></li>
+      </ul>
+    </section>
+
+    <section class="research-project">
+      <h3>Adaptive Roles of ROR-alpha in Cardiac Health</h3>
+      <p>
+        Understanding how the nuclear receptor ROR-alpha preserves mitochondrial function and mitigates cardiac hypertrophy, positioning it as a novel therapeutic target.
+      </p>
+      <ul class="pub-list">
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/34756888/" target="_blank"><i class="fas fa-external-link-alt"></i> ROR-alpha regulation of caveolin-3 mediated mitophagy</a></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/30387679/" target="_blank"><i class="fas fa-external-link-alt"></i> Protection against angiotensin II-induced cardiac hypertrophy</a></li>
+      </ul>
+    </section>
+
   </main>
 
   <footer>
     <p>
-      &copy; 2025 Jensen Lab | UNC Chapel Hill<br>
+      &copy; 2025 Jensen Lab | UNC Chapel Hill | McAllister Heart Institute<br>
       Site created by <a href="https://www.linkedin.com/in/kamthoma" target="_blank">Kam Thomas</a>
     </p>
-  </footer> 
+  </footer>
 </body>
 </html>
