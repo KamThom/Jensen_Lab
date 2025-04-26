@@ -11,10 +11,9 @@ a {
 }
 
 .hero {
-  background: linear-gradient(to bottom, #1f1f1f, #2c2c2c);
+  background: #1f1f1f; /* solid, clean charcoal gray */
   color: white;
   padding: 40px 60px;
-  position: relative;
 }
 
 .hero::after {
@@ -92,8 +91,8 @@ a {
 }
 
 .research-focus {
-  background: #1a1a1a;
-  padding: 80px 20px;
+  background: #1a1a1a; /* slightly darker than hero */
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -135,7 +134,7 @@ a {
 }
 
 .about {
-  background: #181818;
+  background: #181818; /* slightly darker again */
   padding: 100px 20px;
   text-align: center;
 }
