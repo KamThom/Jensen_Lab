@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/photo_logo" href="images/favicon.png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Publications | Jensen Lab</title>
@@ -155,6 +156,26 @@
       Site created by <a href="https://www.linkedin.com/in/kamthoma" target="_blank">Kam Thomas</a>
     </p>
   </footer>
+
+  <button id="scrollToTopBtn" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+  
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+  
+    scrollBtn.addEventListener('click', function(){
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  </script>
 
   <script>
     const pubObserver = new IntersectionObserver(entries => {
