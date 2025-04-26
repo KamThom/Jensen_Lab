@@ -13,24 +13,33 @@ a {
 .hero {
   background: linear-gradient(to right, #1f1f1f, #2c2c2c);
   color: white;
-  text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
-.hero-content h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 1.3em;
-  margin-bottom: 20px;
+.hero-content-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* allows stacking on small screens */
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
 }
 
 .lab-logo {
   width: 100px;
   height: auto;
-  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  margin: 10px 0 20px 0;
 }
 
 .button {
@@ -41,11 +50,11 @@ a {
   font-weight: bold;
   border-radius: 5px;
   transition: all 0.3s;
+  display: inline-block;
 }
 
 .button:hover {
   background: #347aab;
-  color: white;
 }
 
 .research-focus {
