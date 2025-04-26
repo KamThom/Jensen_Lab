@@ -274,11 +274,16 @@ html {
 }
 
 .page-content {
-  background: #1a1a1a;
+  background: #1f1f1f;
   padding: 80px 20px;
   color: #e0e0e0;
   max-width: 1000px;
   margin: auto;
+}
+
+.research-intro {
+  margin-top: 0;
+  padding-top: 20px;
 }
 
 .research-intro h2 {
