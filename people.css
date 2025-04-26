@@ -7,13 +7,17 @@
   padding: 20px;
 }
 
-/* .person {
-  background: #222;
+.person {
+  background: #222; 
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-} */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: transform, opacity;
+}
 
 .person {
   opacity: 0;
@@ -41,8 +45,9 @@
   text-decoration: none;
 }
 
-.person h3 a:hover {
-  color: #81c7ff;
+.person:hover {
+  transform: translateY(-5px) rotateZ(-1deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .person.show {
@@ -86,11 +91,10 @@
 }
 
 .mascot {
-  box-shadow: 0 0 15px rgba(75, 156, 211, 0.6); /* Carolina blue glow */
+  box-shadow: 0 0 15px rgba(75, 156, 211, 0.6);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Stronger glow on hover */
 .mascot:hover {
   box-shadow: 0 0 25px rgba(75, 156, 211, 0.9);
 }
