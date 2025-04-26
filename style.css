@@ -306,6 +306,18 @@ html {
   margin-bottom: 10px;
 }
 
+.research-wrapper {
+  background: #1a1a1a; /* Slightly darker than header */
+  padding: 60px 0;
+}
+
+.page-content {
+  background: none; /* transparent now since the wrapper holds color */
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
 .grant {
   font-size: 0.9em;
   color: #cccccc;
